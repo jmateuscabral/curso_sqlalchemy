@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "curso-sqlalchemy"
+version = "0.1.0"
+description = ""
+authors = ["Mateus Cabral <jmateus@cge.pi.gov.br>"]
+readme = "README.md"
+packages = [{include = "curso_sqlalchemy"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^2.0.7"
+tqdm = "^4.65.0"
+psycopg2-binary = "^2.9.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

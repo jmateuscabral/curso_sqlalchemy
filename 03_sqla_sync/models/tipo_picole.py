@@ -12,7 +12,7 @@ class TipoPicole(Base):
 
     nome: Mapped[str] = mapped_column(String(45), unique=True)
 
-    tipo_picole: Mapped[List['Lote']] = relationship(back_populates='tipo_picole')
+    # tipo_picole: Mapped[List['Lote']] = relationship(back_populates='tipo_picole')
 
     # lote_id: Mapped[int] = mapped_column(ForeignKey("lotes.id"))
     # user: Mapped["Lote"] = relationship(back_populates="tipos_picole")
